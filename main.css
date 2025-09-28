@@ -53,10 +53,8 @@ h3{
     background-color: #3EBFFF;
 }
 
-.headerContainer>span{
-    font-family: "Barlow";
-    letter-spacing: 1px;
-    font-size: 32px;
+.menu{
+    display: none;
 }
 
 .imageContainer{
@@ -111,8 +109,14 @@ h3{
 .containerGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:  repeat(4, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
     background-color: cadetblue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 4 span;
 }
 /*Struttura griglia*/
 .grid1,
@@ -242,6 +246,7 @@ h3{
     background-size: cover;
     background-position-y: 30%;
     background-position-x: 40%;
+    width: 100%;
 }
 
 .grid10{
@@ -249,6 +254,7 @@ h3{
     background-size: cover;
     background-position-y: 30%;
     background-position-x: 40%;
+    width: 100%;
 }
 
 .grid11{
@@ -256,6 +262,7 @@ h3{
     background-size: cover;
     background-position-y: 30%;
     background-position-x: 40%;
+    width: 100%;
 }
 
 .grid12{
@@ -263,6 +270,7 @@ h3{
     background-size: cover;
     background-position-y: 30%;
     background-position-x: 40%;
+    width: 100%;
 
 }
 
@@ -312,4 +320,100 @@ h3{
 .footerContainer img:hover{ 
     cursor: pointer;
     filter: brightness(0) invert(3);
+}
+
+/*********************************************************/
+/*Responsive*/
+
+    @media screen and (max-width: 380px) {
+
+    .headerList {
+    display: none;
+    list-style-type: none;
+    }
+
+    .menu{
+    display: block;
+    }
+
+    .containerGrid {
+    display: flex;
+    flex-direction: column;
+    }
+
+    h1{
+    line-height: 36px;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .grid1 {
+    background-image: url(img/mobile/image-header.jpg);
+    height: 330px;
+    }
+    .grid3{
+        background-image: url(img/mobile/image-transform.jpg);
+    }
+    .grid4{
+        background-image: url(img/mobile/image-stand-out.jpg);
+        background-position-x: 45%;
+    }
+    .grid6{
+        background-image: url(img/mobile/image-graphic-design.jpg);
+    }
+    .grid7{
+        background-image: url(img/mobile/image-photography.jpg);
+    }
+    .grid9{
+        background-image: url(img/mobile/image-gallery-milkbottles.jpg);
+    }
+    .grid10{
+        background-image: url(img/mobile/image-gallery-orange.jpg);
+    }
+    .grid11{
+        background-image: url(img/mobile/image-gallery-cone.jpg);
+    }
+    .grid12{
+        background-image: url(img/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+    .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid2 > div, 
+    .grid5 > div{
+    text-align: center;
+    width: 90%;
+    }
+
+    .grid9,
+    .grid10,
+    .grid11,
+    .grid12{
+        height: 250px;
+    }
+
+    .smallContainer {
+    width: 90%;
+    margin: 88% auto 6%;
+    }
+
+    .imageContainer {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footerContainer {
+    width: 90%;
+    }
+
+    .footerContainer div ul {
+    margin: 40px 0 60px 0;
+    }
+
+
+
 }
