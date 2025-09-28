@@ -1,3 +1,5 @@
+/*Generale*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +12,11 @@ body{
     font-size: 18px;
 }
 
+/*Contenitori*/
 .headerContainer{
     display: flex;
     height: 50px;
-    background-color: bisque;
+    background-color: #3EBFFF;
 }
 
 .containerGrid{
@@ -30,6 +33,7 @@ main div{
     border: 2px solid black;
 }
 
+/*Struttura griglia*/
 .grid1,
 .grid8,
 .grid13{
@@ -43,4 +47,75 @@ main div{
 .grid6,
 .grid7{
     grid-column: 2 span;
+}
+
+/*Singole griglie*/
+.grid1{
+    background-image: url(img/desktop/image-header.jpg);
+    background-size: cover;
+    background-position-y: 80%
+}
+
+.grid2{
+    background-color: white;
+}
+
+.grid3{
+    background-image: url(img/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.grid4{
+    background-image: url(img/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.grid5{
+    background-color: white;
+}
+
+.grid6{
+    background-image: url(img/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.grid7{
+    background-image: url(img/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.grid8{
+    background-color: white;
+}
+
+.grid9{
+    background-image: url(img/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.grid10{
+    background-image: url(img/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.grid11{
+    background-image: url(img/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.grid12{
+    background-image: url(img/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.grid13{
+    background-color: #90D4C5;
 }
