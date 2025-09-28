@@ -333,7 +333,9 @@ h3{
     }
 
     .menu{
+    cursor: pointer;
     display: block;
+    margin-left: 50%;
     }
 
     .containerGrid {
@@ -351,36 +353,58 @@ h3{
     .grid1 {
     background-image: url(img/mobile/image-header.jpg);
     height: 330px;
+    order: 1;
+    }
+    .grid2{
+        order: 3;
     }
     .grid3{
         background-image: url(img/mobile/image-transform.jpg);
+        order: 2;
     }
     .grid4{
         background-image: url(img/mobile/image-stand-out.jpg);
         background-position-x: 45%;
+        order: 4;
+    }
+    .grid5{
+        order: 5;
     }
     .grid6{
         background-image: url(img/mobile/image-graphic-design.jpg);
+        order: 6;
     }
     .grid7{
         background-image: url(img/mobile/image-photography.jpg);
+        order: 7;
+    }
+    .grid8{
+        order: 8;
     }
     .grid9{
         background-image: url(img/mobile/image-gallery-milkbottles.jpg);
+        order: 9;
     }
     .grid10{
         background-image: url(img/mobile/image-gallery-orange.jpg);
+        order: 10;
     }
     .grid11{
         background-image: url(img/mobile/image-gallery-cone.jpg);
+        order: 11;
     }
     .grid12{
         background-image: url(img/mobile/image-gallery-sugar-cubes.jpg);
+        order: 12;
+    }
+    .grid13{
+        order: 13;
     }
 
     .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    order: 9;
     }
 
     .grid2 > div, 
