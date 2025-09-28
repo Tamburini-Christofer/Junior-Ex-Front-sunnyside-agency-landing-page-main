@@ -8,16 +8,44 @@
 
 body{
     font-family: "Barlow", Arial, Helvetica, sans-serif ;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
+}
+
+a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /*Contenitori*/
 .headerContainer{
+    color: white;
     display: flex;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
     background-color: #3EBFFF;
 }
+
+.headerList{
+    display: flex;
+    list-style-type: none;
+}
+
+.headerList li a{
+    margin: 0 14px;
+}
+
+.contact{
+    color: black;
+    background-color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
 
 .containerGrid{
     display: grid;
