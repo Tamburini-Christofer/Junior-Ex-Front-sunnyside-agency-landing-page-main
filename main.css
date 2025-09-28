@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: "Barlow", Arial, Helvetica, sans-serif ;
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
@@ -16,6 +16,15 @@ a{
     color: white;
     list-style-type: none;
     text-decoration: none;
+}
+
+h1{
+     font-family: "Fraunces", Arial, Helvetica sans-serif ;
+    letter-spacing: 10px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
 }
 
 /*Contenitori*/
@@ -45,14 +54,11 @@ a{
     border-radius: 30px;
 }
 
-
-
 .containerGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows:  repeat(4, 1fr);
     background-color: cadetblue;
-    height: 800px;
 }
 
 main div{
@@ -81,7 +87,8 @@ main div{
 .grid1{
     background-image: url(img/desktop/image-header.jpg);
     background-size: cover;
-    background-position-y: 80%
+    background-position-y:90%;
+    height: 500px;
 }
 
 .grid2{
