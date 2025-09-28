@@ -7,9 +7,10 @@
 }
 
 body{
-    font-family: "Franceus";
+    font-family: "Fraunces";
+    line-height: 24px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a{
@@ -19,7 +20,6 @@ a{
 }
 
 h1{
-     font-family: "Fraunces", Arial, Helvetica sans-serif ;
     letter-spacing: 10px;
     font-weight: 900;
     text-align: center;
@@ -28,7 +28,8 @@ h1{
 }
 
 h2{
-    font-size: 45px;
+    line-height: 48px;
+    font-size: 40px;
     font-weight: revert;
 }
 
@@ -50,6 +51,12 @@ h3{
     align-items: center;
     padding: 35px 30px;
     background-color: #3EBFFF;
+}
+
+.headerContainer>span{
+    font-family: "Barlow";
+    letter-spacing: 1px;
+    font-size: 32px;
 }
 
 .imageContainer{
@@ -102,11 +109,6 @@ h3{
     grid-template-rows:  repeat(4, 1fr);
     background-color: cadetblue;
 }
-
-main div{
-    height: 500px;
-}
-
 /*Struttura griglia*/
 .grid1,
 .grid8,
@@ -121,6 +123,13 @@ main div{
 .grid6,
 .grid7{
     grid-column: 2 span;
+    height: 500px;
+}
+
+.grid9,
+.grid10,
+.grid11,
+.grid12{
     height: 500px;
 }
 
@@ -179,8 +188,7 @@ main div{
 
 .smallContainer{
     text-align: center;
-    height: 143px;
-    width: 335px;
+    width: 60%;
     margin: 48% auto 6%;
 }
 
@@ -241,4 +249,39 @@ main div{
 
 .grid13{
     background-color: #90D4C5;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 40%;
+    margin: 10% auto 16% auto;
+}
+
+.footerContainer>span{
+    font-family: "Barlow";
+    color: hsl(167, 40%, 24%);
+    letter-spacing: 1px;
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.footerContainer div ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.footerContainer div ul li a{
+    color: hsl(167, 40%, 24%);
+    font-size: 16px;
+    
+    opacity: 0.5;
+    margin: 0 20px;
+}
+
+.footerContainer img{
+    margin: 20px 20px 0px 20px;
 }
