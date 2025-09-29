@@ -19,6 +19,7 @@ a{
     text-decoration: none;
 }
 
+/*Titoli*/
 h1{
     letter-spacing: 10px;
     font-weight: 900;
@@ -38,12 +39,7 @@ h3{
     opacity: 0.6;
 }
 
-.imageContainer div img{
-    border-radius: 100%;
-    max-width:20%;
-}
-
-/*Contenitori*/
+/*HEADER*/
 .headerContainer{
     color: white;
     display: flex;
@@ -52,18 +48,15 @@ h3{
     padding: 35px 30px;
     background-color: #3EBFFF;
 }
-
 .menu{
     display: none;
 }
-
 .imageContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
     margin: 2% auto;
 }
-
 .imageContainer>h4{
     letter-spacing: 3px;
     font-weight: 900;
@@ -72,27 +65,26 @@ h3{
     margin: 6% 0 0 0;
     color: grey;
 }
-
 .imageContainer div{
     text-align: center;
     justify-content: center;
     padding: 20px 35px;
     color: hsl(232, 10%, 55%);
 }
-
 .imageContainer div p{
     margin: 40px 0;
 }
-
+.imageContainer div img{
+    border-radius: 100%;
+    max-width:20%;
+}
 .headerList{
     display: flex;
     list-style-type: none;
 }
-
 .headerList li a{
     margin: 0 14px;
 }
-
 .contact{
     color: black;
     background-color: white;
@@ -100,12 +92,13 @@ h3{
     text-align: center;
     border-radius: 30px;
 }
-
 .contact:hover{
     color: white;
     background-color: #6FCEFF ;
 }
 
+/*MAIN*/
+/*Struttura griglia*/
 .containerGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -118,7 +111,7 @@ h3{
     grid-template-columns: repeat(4, 1fr);
     grid-column: 4 span;
 }
-/*Struttura griglia*/
+
 .grid1,
 .grid8,
 .grid13{
@@ -142,33 +135,6 @@ h3{
     height: 500px;
 }
 
-/*Singole griglie*/
-.grid1{
-    background-image: url(img/desktop/image-header.jpg);
-    background-size: cover;
-    background-position-y:90%;
-}
-
-.grid2{
-    background-color: white;
-}
-
-.gridContent>p{
-    color: hsl(232, 10%, 55%);
-    line-height: 24px;
-    margin: 40px 0;
-}
-
-.yellowShadow{
-    color: black;
-    box-shadow: -1px 6px 4px -2px yellow;
-}
-
-.redShadow{
-    color: black;
-    box-shadow: 0px 5px 3px -2px #FF7661;
-}
-
 .grid2>div,
 .grid5>div{
     border: 0;
@@ -179,6 +145,29 @@ h3{
     letter-spacing: 1px;
 }
 
+/*Singole griglie*/
+/*Griglia 1*/
+.grid1{
+    background-image: url(img/desktop/image-header.jpg);
+    background-size: cover;
+    background-position-y:90%;
+}
+
+/*Griglia 2*/
+.grid2{
+    background-color: white;
+}
+.gridContent>p{
+    color: hsl(232, 10%, 55%);
+    line-height: 24px;
+    margin: 40px 0;
+}
+.yellowShadow{
+    color: black;
+    box-shadow: -1px 6px 4px -2px yellow;
+}
+
+/*Griglia 3*/
 .grid3{
     background-image: url(img/desktop/image-transform.jpg);
     background-size: cover;
@@ -186,30 +175,35 @@ h3{
     background-position-x: 40%;
 }
 
+/*Griglia 4*/
 .grid4{
     background-image: url(img/desktop/image-stand-out.jpg);
     background-size: cover;
     background-position-y: 40%;
     background-position-x: 40%;
 }
+.redShadow{
+    color: black;
+    box-shadow: 0px 5px 3px -2px #FF7661;
+}
 
+/*Griglia 5*/
 .grid5{
     background-color: white;
 }
 
+/*Griglia 6*/
 .grid6{
     background-image: url(img/desktop/image-graphic-design.jpg);
     background-size: cover;
     background-position-y: 40%;
     background-position-x: 40%;
 }
-
 .smallContainer{
     text-align: center;
     width: 60%;
     margin: 48% auto 6%;
 }
-
 .smallContainer>p{
     font-size: 16px;
     font-weight: bold;
@@ -218,16 +212,17 @@ h3{
     opacity: 0.5;
 }
 
+/*Griglia 7*/
 .grid7{
     background-image: url(img/desktop/image-photography.jpg);
     background-size: cover;
     background-position-y: 30%;
 }
 
+/*Griglia 8*/
 .grid8{
     background-color: white;
 }
-
 .name span:first-child{
     display: block;
     font-size: 20px;
@@ -235,12 +230,12 @@ h3{
     margin-bottom: 10px;
     color: black;
 }
-
 .name span:last-child{
     font-size: 14px;
     color: grey;
 }
 
+/*Griglia 9*/
 .grid9{
     background-image: url(img/desktop/image-gallery-milkbottles.jpg);
     background-size: cover;
@@ -249,6 +244,7 @@ h3{
     width: 100%;
 }
 
+/*Griglia 10*/
 .grid10{
     background-image: url(img/desktop/image-gallery-orange.jpg);
     background-size: cover;
@@ -257,6 +253,7 @@ h3{
     width: 100%;
 }
 
+/*Griglia 11*/
 .grid11{
     background-image: url(img/desktop/image-gallery-cone.jpg);
     background-size: cover;
@@ -265,19 +262,21 @@ h3{
     width: 100%;
 }
 
+/*Griglia 12*/
 .grid12{
     background-image: url(img/desktop/image-gallery-sugarcubes.jpg);
     background-size: cover;
     background-position-y: 30%;
     background-position-x: 40%;
     width: 100%;
-
 }
 
+/*Griglia 13*/
 .grid13{
     background-color: #90D4C5;
 }
 
+/*FOOTER*/
 .footerContainer{
     display: flex;
     flex-direction: column;
@@ -285,9 +284,8 @@ h3{
     align-items: center;
     width: 30%;
     height: 40%;
-    margin: 10% auto 16% auto;
+    margin: 8% auto 10% auto;
 }
-
 .footerContainer>span{
     font-family: "Barlow";
     color: hsl(167, 40%, 24%);
@@ -295,28 +293,23 @@ h3{
     font-size: 32px;
     opacity: 0.8;
 }
-
 .footerContainer div ul{
     display: flex;
     list-style-type: none;
 }
-
 .footerContainer div ul li a{
     color: hsl(167, 40%, 24%);
     font-size: 16px;
     opacity: 0.5;
     margin: 0 20px;
 }
-
 .footerContainer div ul li a:hover{
     color: white;
 
 }
-
 .footerContainer img{
     margin: 20px 20px 0px 20px;
 }
-
 .footerContainer img:hover{ 
     cursor: pointer;
     filter: brightness(0) invert(3);
@@ -338,16 +331,32 @@ h3{
     margin-left: 50%;
     }
 
-    .containerGrid {
-    display: flex;
-    flex-direction: column;
-    }
-
     h1{
     line-height: 36px;
     }
     h2{
         font-size: 35px;
+    }
+
+    /*ORDINE GRIGLIE*/
+
+    .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    order: 9;
+    }
+
+    .grid2 > div, 
+    .grid5 > div{
+    text-align: center;
+    width: 90%;
+    }
+
+    .grid9,
+    .grid10,
+    .grid11,
+    .grid12{
+        height: 250px;
     }
 
     .grid1 {
@@ -401,23 +410,10 @@ h3{
         order: 13;
     }
 
-    .grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    order: 9;
-    }
-
-    .grid2 > div, 
-    .grid5 > div{
-    text-align: center;
-    width: 90%;
-    }
-
-    .grid9,
-    .grid10,
-    .grid11,
-    .grid12{
-        height: 250px;
+    /*CONTAINER*/
+    .containerGrid {
+    display: flex;
+    flex-direction: column;
     }
 
     .smallContainer {
