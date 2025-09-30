@@ -39,6 +39,44 @@ h3{
     opacity: 0.6;
 }
 
+.burgerMenu{
+    position: absolute;
+    top: 18%;
+    right: 10%;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+}
+
+#triangle {
+  position: absolute;
+  width: 0;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 45px solid rgb(255, 255, 255);
+  border-bottom: 40px solid transparent;
+  transform: rotate(90deg);
+  top: -8%;
+  left: 86.1%;
+}
+
+.burgerList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burgerList li{
+    margin: 16px 0;
+}
+
+.burgerList li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: grey;
+}
+
 /*HEADER*/
 .headerContainer{
     color: white;
@@ -92,6 +130,12 @@ h3{
     text-align: center;
     border-radius: 30px;
 }
+
+.burgerContact{
+    background-color: yellow;
+    color: black;
+}
+
 .contact:hover{
     color: white;
     background-color: #6FCEFF ;
